@@ -1,0 +1,55 @@
+#display {
+  color: white;
+  font-size: 30px;
+  width: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#board {
+  width: 500px;
+  border-image: url(http://us.123rf.com/450wm/iorpi/iorpi1507/iorpi150700178/43087073-sunny-yellow-fun-abstract-summer-design.jpg?ver=6) 30 round;
+  border-image-width: 8px;
+  border-image-radius: 18px;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+}
+.cells {
+  width: 166px;
+  height: 166px;
+  border: solid white 6px;
+  border-radius: 100px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 10px;
+  font-size: 90px;
+  box-sizing: border-box;
+  line-height: 250px;
+  color: white;
+}
+.cells:hover {
+  border: solid red 6px;
+}
+.row{
+  display: flex;
+}
+#reset {
+  width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  background-color: rgb(240,233,12);
+  border-color: rgb(176,171,27);
+  border-radius: 18px;
+  height: 50px;
+  font-size: 20px;
+  font-family: fantasy;
+  padding-top: 8px;
+}

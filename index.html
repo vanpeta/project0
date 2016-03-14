@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C.A. Tic tac toe</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body background="http://orig01.deviantart.net/2793/f/2009/037/5/a/well_worn_outdoor_poker_table_by_n3x_.jpg">
+  <div id="display">Let's get started...</div>
+  <div id="board">
+    <div class="row">
+      <div onclick="pressA1()" class="cells" class="row_a" class="column_1" id="a1"></div>
+      <div onclick="pressA2()" class="cells" class="row_a" class="column_2" id="a2"></div>
+      <div onclick="pressA3()" class="cells" class="row_a" class="column_3" id="a3"></div>
+    </div>
+    <div class="row">
+      <div onclick="pressB1()" class="cells" class="row_b" class="column_1" id="b1"></div>
+      <div onclick="pressB2()" class="cells" class="row_b" class="column_2" id="b2"></div>
+      <div onclick="pressB3()" class="cells" class="row_b" class="column_3" id="b3"></div>
+    </div>
+    <div class="row">
+      <div onclick="pressC1()" class="cells" class="row_c" class="column_1" id="c1"></div>
+      <div onclick="pressC2()" class="cells" class="row_c" class="column_2" id="c2"></div>
+      <div onclick="pressC3()" class="cells" class="row_c" class="column_3" id="c3"></div>
+    </div>
+  </div>
+  <button onclick="window.location.reload()" id="reset">Reset Game</button>
+
+</body>
+<script src="js/main.js"></script>
+</html>
