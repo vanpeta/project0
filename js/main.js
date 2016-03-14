@@ -97,6 +97,7 @@ function pressB3() {
   } else if ((b3=="")&&(turn%2==1)){
     document.getElementById("b3").innerHTML = "<img id='b3X' src='X.png'/>"
     b3 = "X"
+    turn++
   } else if ((b3=="")&&(turn%2==0)){
     document.getElementById("b3").innerHTML = "<img id='b3O' src='O.png'/>"
     b3 = "O"
