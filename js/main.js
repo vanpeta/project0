@@ -25,11 +25,11 @@ function pressA1() {
     if (done == "yes") {
       alert("GAME OVER - Press Reset Game to play again")
   } else if ((a1=="")&&(turn%2==1)){
-    document.getElementById("a1").innerHTML = "<img id='a1X' src='X.png'/>"
+    document.getElementById("a1").innerHTML = "<img id='a1X' class= 'chip' src='X.png'/>"
     a1 = "X"
     turn++
   } else if ((a1=="")&&(turn%2==0)){
-    document.getElementById("a1").innerHTML = "<img id='a1O' src='O.png'/>"
+    document.getElementById("a1").innerHTML = "<img id='a1O' class= 'chip' src='O.png'/>"
     a1 = "O"
     turn++
   } displayText()
@@ -39,11 +39,11 @@ function pressA2() {
     if (done == "yes") {
       alert("GAME OVER - Press Reset Game to play again")
   } else if ((a2=="")&&(turn%2==1)){
-    document.getElementById("a2").innerHTML = "<img id='a2X' src='X.png'/>"
+    document.getElementById("a2").innerHTML = "<img id='a2X' class= 'chip' src='X.png'/>"
     a2 = "X"
     turn++
   } else if ((a2=="")&&(turn%2==0)){
-    document.getElementById("a2").innerHTML = "<img id='a2O' src='O.png'/>"
+    document.getElementById("a2").innerHTML = "<img id='a2O' class= 'chip' src='O.png'/>"
     a2 = "O"
     turn++
   } displayText()
@@ -53,11 +53,11 @@ function pressA3() {
     if (done == "yes") {
       alert("GAME OVER - Press Reset Game to play again")
   } else if ((a3=="")&&(turn%2==1)){
-    document.getElementById("a3").innerHTML = "<img id='a3X' src='X.png'/>"
+    document.getElementById("a3").innerHTML = "<img id='a3X' class= 'chip' src='X.png'/>"
     a3 = "X"
     turn++
   } else if ((a3=="")&&(turn%2==0)){
-    document.getElementById("a3").innerHTML = "<img id='a3O' src='O.png'/>"
+    document.getElementById("a3").innerHTML = "<img id='a3O' class= 'chip' src='O.png'/>"
     a3 = "O"
     turn++
   } displayText()
@@ -67,11 +67,11 @@ function pressB1() {
     if (done == "yes") {
       alert("GAME OVER - Press Reset Game to play again")
   } else if ((b1=="")&&(turn%2==1)){
-    document.getElementById("b1").innerHTML = "<img id='b1X' src='X.png'/>"
+    document.getElementById("b1").innerHTML = "<img id='b1X' class= 'chip' src='X.png'/>"
     b1 = "X"
     turn++
   } else if ((b1=="")&&(turn%2==0)){
-    document.getElementById("b1").innerHTML = "<img id='b1O' src='O.png'/>"
+    document.getElementById("b1").innerHTML = "<img id='b1O' class= 'chip' src='O.png'/>"
     b1 = "O"
     turn++
   } displayText()
@@ -81,11 +81,11 @@ function pressB2() {
     if (done == "yes") {
       alert("GAME OVER - Press Reset Game to play again")
   } else if ((b2=="")&&(turn%2==1)){
-    document.getElementById("b2").innerHTML = "<img id='b2X' src='X.png'/>"
+    document.getElementById("b2").innerHTML = "<img id='b2X' class= 'chip' src='X.png'/>"
     b2 = "X"
     turn++
   } else if ((b2=="")&&(turn%2==0)){
-    document.getElementById("b2").innerHTML = "<img id='b2O' src='O.png'/>"
+    document.getElementById("b2").innerHTML = "<img id='b2O' class= 'chip' src='O.png'/>"
     b2 = "O"
     turn++
   } displayText()
@@ -95,11 +95,11 @@ function pressB3() {
     if (done == "yes") {
       alert("GAME OVER - Press Reset Game to play again")
   } else if ((b3=="")&&(turn%2==1)){
-    document.getElementById("b3").innerHTML = "<img id='b3X' src='X.png'/>"
+    document.getElementById("b3").innerHTML = "<img id='b3X' class= 'chip' src='X.png'/>"
     b3 = "X"
     turn++
   } else if ((b3=="")&&(turn%2==0)){
-    document.getElementById("b3").innerHTML = "<img id='b3O' src='O.png'/>"
+    document.getElementById("b3").innerHTML = "<img id='b3O' class= 'chip' src='O.png'/>"
     b3 = "O"
     turn++
   } displayText()
@@ -109,11 +109,11 @@ function pressC1() {
     if (done == "yes") {
       alert("GAME OVER - Press Reset Game to play again")
   } else if ((c1=="")&&(turn%2==1)){
-    document.getElementById("c1").innerHTML = "<img id='c1X' src='X.png'/>"
+    document.getElementById("c1").innerHTML = "<img id='c1X' class= 'chip' src='X.png'/>"
     c1 = "X"
     turn++
   } else if ((c1=="")&&(turn%2==0)){
-    document.getElementById("c1").innerHTML = "<img id='c1O' src='O.png'/>"
+    document.getElementById("c1").innerHTML = "<img id='c1O' class= 'chip' src='O.png'/>"
     c1 = "O"
     turn++
   } displayText()
@@ -123,11 +123,11 @@ function pressC2() {
     if (done == "yes") {
       alert("GAME OVER - Press Reset Game to play again")
   } else if ((c2=="")&&(turn%2==1)){
-    document.getElementById("c2").innerHTML = "<img id='c2X' src='X.png'/>"
+    document.getElementById("c2").innerHTML = "<img id='c2X' class= 'chip' src='X.png'/>"
     c2 = "X"
     turn++
   } else if ((c2=="")&&(turn%2==0)){
-    document.getElementById("c2").innerHTML = "<img id='c2O' src='O.png'/>"
+    document.getElementById("c2").innerHTML = "<img id='c2O' class= 'chip' src='O.png'/>"
     c2 = "O"
     turn++
   } displayText()
@@ -137,11 +137,11 @@ function pressC3() {
     if (done == "yes") {
       alert("GAME OVER - Press Reset Game to play again")
   } else if ((c3=="")&&(turn%2==1)){
-    document.getElementById("c3").innerHTML = "<img id='c3X' src='X.png'/>"
+    document.getElementById("c3").innerHTML = "<img id='c3X' class= 'chip' src='X.png'/>"
     c3 = "X"
     turn++
   } else if ((c3=="")&&(turn%2==0)){
-    document.getElementById("c3").innerHTML = "<img id='c3O' src='O.png'/>"
+    document.getElementById("c3").innerHTML = "<img id='c3O' class= 'chip' src='O.png'/>"
     c3 = "O"
     turn++
   } displayText()
