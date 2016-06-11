@@ -34,6 +34,7 @@ function pressA1() {
     turn++
   } displayText()
     getWinner()
+    aiMove()
 }
 function pressA2() {
     if (done == "yes") {
@@ -48,6 +49,7 @@ function pressA2() {
     turn++
   } displayText()
     getWinner()
+    aiMove()
 }
 function pressA3() {
     if (done == "yes") {
@@ -62,6 +64,7 @@ function pressA3() {
     turn++
   } displayText()
     getWinner()
+    aiMove()
 }
 function pressB1() {
     if (done == "yes") {
@@ -76,6 +79,7 @@ function pressB1() {
     turn++
   } displayText()
     getWinner()
+    aiMove()
 }
 function pressB2() {
     if (done == "yes") {
@@ -90,6 +94,7 @@ function pressB2() {
     turn++
   } displayText()
     getWinner()
+    aiMove()
 }
 function pressB3() {
     if (done == "yes") {
@@ -104,6 +109,7 @@ function pressB3() {
     turn++
   } displayText()
     getWinner()
+    aiMove()
 }
 function pressC1() {
     if (done == "yes") {
@@ -118,6 +124,7 @@ function pressC1() {
     turn++
   } displayText()
     getWinner()
+    aiMove()
 }
 function pressC2() {
     if (done == "yes") {
@@ -132,6 +139,7 @@ function pressC2() {
     turn++
   } displayText()
     getWinner()
+    aiMove()
 }
 function pressC3() {
     if (done == "yes") {
@@ -146,8 +154,19 @@ function pressC3() {
     turn++
   } displayText()
     getWinner()
+    aiMove()
 }
 function getWinner (){
+  var a1 = document.getElementById("a1").innerHTML.charAt(11);
+  var a2 = document.getElementById("a2").innerHTML.charAt(11);
+  var a3 = document.getElementById("a3").innerHTML.charAt(11);
+  var b1 = document.getElementById("b1").innerHTML.charAt(11);
+  var b2 = document.getElementById("b2").innerHTML.charAt(11);
+  var b3 = document.getElementById("b3").innerHTML.charAt(11);
+  var c1 = document.getElementById("c1").innerHTML.charAt(11);
+  var c2 = document.getElementById("c2").innerHTML.charAt(11);
+  var c3 = document.getElementById("c3").innerHTML.charAt(11);
+
   if ((a1=="X"&&a2=="X"&&a3=="X")||(a1=="X"&&b1=="X"&&c1=="X")||(a1=="X"&&b2=="X"&&c3=="X")||(a2=="X"&&b2=="X"&&c2=="X")||(a3=="X"&&b3=="X"&&c3=="X")||(a3=="X"&&b2=="X"&&c1=="X")||(b1=="X"&&b2=="X"&&b3=="X")||(c1=="X"&&c2=="X"&&c3=="X")){
     document.getElementById("display").innerHTML="X WINS!!!"
     stop()
@@ -156,5 +175,35 @@ function getWinner (){
     stop ()
   } else if (turn==10){
     document.getElementById("display").innerHTML="It is a tie!"
+    stop ()
   }
 }
+
+function aiMove() {
+  if (turn == 10 && done == "no"){
+    return (document.getElementById("display").innerHTML="It is a tie!")
+  }else {
+    var tiles = ["a1","a2","a3","b1","b2","b3","c1","c2","c3"]
+    var tile = tiles[Math.floor(Math.random()*tiles.length)]
+    console.log (tile)
+    var newTile = document.getElementById(tile).innerHTML
+    var move = "O"
+    if (turn%2==0 && newTile == "" && done!="yes") {
+      document.getElementById(tile).innerHTML = "<img id='"+tile+move+"' class= 'chip' src='O.png'/>"
+      turn++
+    }else if (turn%2==0 && done!="yes") {
+      tile = tiles[Math.floor(Math.random()*tiles.length)]
+      aiMove()
+    }
+    displayText()
+    getWinner()
+  }
+}
+
+
+
+
+
+
+
+
