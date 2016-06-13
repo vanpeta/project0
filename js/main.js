@@ -445,7 +445,14 @@ function takeANoviceMove(turn) {
   game.advanceTo(next);
 };
 
-
+function takeABlindMove(turn) {
+  var available = game.currentState.emptyCells();
+  var randomCell = available[Math.floor(Math.random()*available.length)];
+  var action = new AIAction(randomCell);
+  var next = action.applyTo(game.currentState);
+  ui.insertAt(randomCell, turn);
+  game.advanceTo(next);
+}
 
 
 
