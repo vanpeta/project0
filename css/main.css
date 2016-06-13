@@ -28,8 +28,8 @@
   vertical-align: middle;
   display: inline-block;
   margin: 10px;
-  font-size: 90px;
-  box-sizing: border-box;
+/*  font-size: 90px;
+*/  box-sizing: border-box;
   line-height: 250px;
   color: white;
 }
