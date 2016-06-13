@@ -416,6 +416,41 @@ function takeAMasterMove(turn) {
   game.advanceTo(next);
 }
 
+function takeANoviceMove(turn) {
+  var available = game.currentState.empyCells();
+  var availableActions = available.map(function(pos) {
+    var action = newAIAction(pos);
+    var next = action.applyTo(game.currentState);
+    action.minimaxVal= minimaxValue(next)
+    return action;
+  });
+  if(turn=="X")
+    availableActions.sort(AIAction.DESCENDING);
+  else
+    availableActions.sort(AIAction.ASCENDING);
+  var chosenAction;
+  if(Math.random()*100<=40){
+    chosenAction = availableActions[0];
+  }
+  else {
+    if (availableActions.length>=2) {
+      chosenAction=availableActions[1];
+    }
+    else {
+      chosenAction = availableActions[0];
+    }
+  }
+  var next = chosenAction.applyTo(game.currentState);
+  ui.insertAt(chosenAction.movePosition, turn);
+  game.advanceTo(next);
+};
+
+
+
+
+
+
+
 
 
 
