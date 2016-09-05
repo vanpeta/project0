@@ -36,14 +36,16 @@ $(document).ready(function() {
 });
 
 function updateMove() {
-    console.log('inside updateMove')
     updateButtons();
 
     var winner = getWinner(board);
 
     $("#winner").text(winner == 1 ? "AI Won!" : winner == 0 ? "You Won!" : winner == -1 ? "Tie!" : "");
-
+    if (winner){
+      $('#move').text("")
+    } else {
     $("#move").text(myMove ? "AI's Move" : "Your move");
+  }
 }
 
 function getWinner(board) {
